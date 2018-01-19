@@ -1,0 +1,61 @@
+.button {
+  appearence: none;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 0.25em;
+
+  font-family: $base-font-family;
+  font-weight: $font-weight-bold;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.8em 1.25em 0.7em;
+  font-size: 1rem;
+  text-shadow: none;
+
+  @include trans( (background-color, border-color, color) );
+
+  &:disabled,
+  &[disabled] {
+    cursor: not-allowed;
+    background-color: $gray-lighter;
+    border-color: $gray-light;
+    color: $gray;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $gray-lighter;
+      border-color: $gray-light;
+      color: $gray;
+      box-shadow: none;
+    }
+  }
+}
+// Sizes
+.button--lg {
+  font-size: $font-size-h4;
+}
+.button--sm {
+  font-size: $font-size-h6;
+}
+// Styles
+.button--primary {
+  background-color: $color-info;
+  color: $color-white;
+  font-weight: $font-weight-bold;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background-color: darken( $color-info, 10% );
+  }
+}
+.button--secondary {
+}

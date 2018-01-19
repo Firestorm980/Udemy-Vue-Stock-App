@@ -1,0 +1,147 @@
+/* assets/scss/base/_typography.scss */
+
+html {
+	font-size: 100%;
+}
+
+body {
+	background-color: $base-background;
+	color: $font-body-color;
+	font-family: $base-font-family;
+
+	font-style:  $base-font-style;
+	font-weight: $base-font-weight;
+	line-height: $base-line-height;
+
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $font-heading-color;
+	font-family: $base-heading-family;
+	font-weight: $font-weight-medium;
+	margin-top: 0;
+	margin-bottom: 0.5em;
+	line-height: 1.2;
+}
+
+.heading--1,
+h1 {
+  font-size: $font-size-h1;
+}
+.heading--2,
+h2 {
+	font-size: $font-size-h2;
+}
+.heading--3,
+h3 {
+	font-size: $font-size-h3;
+}
+.heading--4,
+h4 {
+	font-size: $font-size-h4;
+}
+.heading--5,
+h5 {
+	font-size: $font-size-h5;
+}
+.heading--6,
+h6 {
+	font-size: $font-size-h6;
+}
+
+// Paragraph
+p {
+  margin-bottom: $base-font-size;
+	margin-top: 0;
+}
+
+// Italic / Emphasis
+i,
+em {
+  font-style: italic;
+}
+
+// Bold / Strong
+b,
+strong {
+  font-weight: $font-weight-bold;
+}
+
+// Underline
+// Inserted text
+u,
+ins {
+  text-decoration: underline;
+}
+
+// Stikethrough
+s,
+strike,
+del {
+  text-decoration: line-through;
+}
+
+blockquote {
+	max-width: 40em;
+	margin: 0 auto;
+}
+
+// Keyboard
+kbd {
+  background-image: linear-gradient( to bottom, $color-white, $gray-lighter );
+  border-color: hsl(0,0,85%) hsl(0,0,85%) hsl(0,0,75%);
+  border-radius: 0.675em;
+  border-style: solid;
+  border-width: 1px 1px 3px;
+  display: inline-block;
+  font-family: $base-font-family-mono;
+  padding: 0.675em 0.5em;
+  text-shadow: 0 1px 1px $color-white;
+}
+
+// Code
+code {
+  background-color: $gray-darker;
+  border-radius: 0.675em;
+  color: $color-white;
+  display: inline-block;
+  font-family: $base-font-family-mono;
+  padding: 0.675em 0.5em;
+}
+
+// Sample Output
+samp {
+  font-family: $base-font-family-mono;
+}
+
+pre {
+  font-family: $base-font-family-mono;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+time {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+address {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+var {
+  font-family: $base-font-family-serif;
+}
+
+q {
+  font-family: $base-font-family-serif;
+}
